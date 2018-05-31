@@ -1,12 +1,10 @@
 <template>
     <div class="Navmain">
-      <div class="header">
         <div class="TClogo" v-on:click="navToggle(); $router.push('/')"></div>
       <div class="buttonbox">
-        <button class="About" v-on:click="navToggle(); $router.push('/About')">ABOUT</button>
-        <button class="Contact" v-on:click="navToggle(); $router.push('/Contact')">CONTACT</button>
-      </div>
-    </div>
+        <button class="About" v-on:click="navToggle(); $router.push('/About')">About</button>
+        <button class="Contact" v-on:click="navToggle(); $router.push('/Contact')">Contact</button>
+       </div>
     </div>
 </template>
 
@@ -43,37 +41,31 @@ export default {
 <style scoped>
 .Navmain {
   width: 100%;
-  height: 20%;
+  height: 15%;
   position: fixed;
-  background-color: white;
+  background-image: url('../../assets/noise.png');
+  box-shadow: 0px 10px 10px black;
 }
 
-.header {
-  height: 60px;
-}
  .TClogo {
-   margin-top: 20px;
+   margin-top: 40px;
    width: 100%;
-   height: 110px;
-   background-image: url('../../assets/tripclockmobilelogo.svg');
+   height: 65%;
+   background-image: url('../../assets/tripclockmobilelogowhite.svg');
    background-position: center;
    background-repeat: no-repeat;
    background-size: contain;
-
  }
 .buttonbox {
-  background-color: white;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 button {
-  background-color: white;
-  margin-top: 30px;
+  background-image: url('../../assets/noise.png');
   height: 50px;
-  color: black;
-  font-family: 'Open Sans', sans-serif;
-  background: none;
+  color: white;
   border: none;
+  font-family: 'Open Sans', sans-serif;
   -webkit-animation-duration: .25s;
   animation-duration: .25s;
   -webkit-animation-fill-mode: both;
@@ -83,24 +75,6 @@ button {
   animation-iteration-count: 1;
   -webkit-animation-iteration-count: 1;
 }
-button:hover {
-  animation-name: bounce;
-  -moz-animation-name: bounce;
-}
-
-@keyframes bounce {
-  0%, 100% {
-      -webkit-transform: translateY(0);
-      -ms-transform:     translateY(0);
-      transform:         translateY(0)
-    }
-
-    100% {
-      -webkit-transform: translateY(-5px);
-      -ms-transform:     translateY(-5px);
-      transform:         translateY(-5px)
-    }
-  }
   @media only screen and (min-width:1000px) {
     button {
       font-size: 1.5em;

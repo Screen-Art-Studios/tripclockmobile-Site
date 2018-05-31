@@ -1,13 +1,22 @@
 <template>
   <div class="main">
-    <h1>Time Is Money, Right?...</h1>
-    <video src="../assets/Screens.mp4" autoplay></video>
-    <p class="bita">TripClock Mobile is an effortless business solution designed to increase productivity and decrease needless time losses.</p>
-    <p class="bitb">Ensure your team is accomplishing your business goals by monitoring employees location and clock events throughout the work day.</p>
-    <p class="bitc">Tired of disorganized files and tedious record-keeping?<br/> <strong>Optimize your mobile employee management in one place with TimeCrunch.</strong></p>
-    <h2>Only $10 a Month<sup> Per User</sup></h2>
-    <h3>For every 10 users registered you get one free!</h3>
-    <p class="bitd">We're offering some BIG savings celebrating our launch. From deals on multiple users and other free offers, we're making it more cost-effective than ever to run a business.</p>
+    <div class="banner"></div>
+    <h1>We Simplify Making your Mobile Workforce More Efficient</h1>
+    <div class="clock"></div>
+    <h2> Liberate yourself from time-consuming physical records, unnecessary hardware and expenses, and focus on maximizing your service.</h2>
+    <div class="odom"></div>
+    <h3>Untether your mobile fleets from the office. Track mileage effortlessly. Gather data and input it with just a few clicks.</h3>
+    <ul>
+      <li>Track Accurate Mileage of Every Trip</li>
+      <li>Manage More Effectivly with Full Data Analytics</li>
+      <li>Export to Any Spreadsheet or Accounting Software</li>
+      <li>Easy to Use, Easy to Sign Up and Start Maximizing Your Business Potential</li>
+    </ul>
+    <div class="phone"></div>
+    <div class="google"></div>
+    <h4>Or</h4>
+    <div class="apple"></div>
+    <h5>Only $10/User a month</h5>
   </div>
 </template>
 
@@ -19,98 +28,210 @@ export default {
 
 <style scoped>
 .main {
-  margin-top: 200px;
+  padding-top: 150px;
   width: 100%;
-  height: 1000px;
+  height: 100%;
   position: absolute;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(30, 80px);
-  overflow-y: visible;
+  grid-template-rows: repeat(30, 70px);
+  overflow-y: scroll;
+}
+.banner {
+  grid-column-start: 1;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/feat.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 h1 {
-  grid-column-start: 1;
-  grid-column-end: 9;
-  grid-row: 1;
-  height: 40px;
-   color: red;
-   font-size: 2em;
-   text-align: center;
-}
-video {
-  width: 90%;
-  margin-left: 5%;
-  grid-row-start: 3;
-  grid-row-end: 7;
-  grid-column-start: 1;
-  grid-column-end: 5;
-}
-.bita {
-  font-size: 1.2em;
-  grid-column-start: 5;
-  grid-column-end: 9;
-  grid-row: 3;
-}
-.bitb {
-  font-size: 1.2em;
-  grid-column-start: 5;
-  grid-column-end: 9;
-  grid-row: 5;
-}
-.bitc {
-  font-size: 1.5em;
-  grid-column-start: 1;
-  grid-column-end: 9;
-  grid-row: 8;
+  margin: 0;
   text-align: center;
-  color: #c22227;
+  font-size: 1.8em;
+  grid-column-start: 1;
+  grid-column-end: 9;
+  background-color: #751d1d;
+  color: white;
+  height: 100%;
+  width: 100%;
+  grid-row: 4;
+  line-height: 35px;
+}
+.clock {
+  background-image: url('../assets/tc_Time.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 6;
+  grid-row-end: 8;
+  width: 100%;
+  height: 100%;
 }
 h2 {
-  grid-row: 13;
-  grid-column-start: 1;
+  grid-column-start: 4;
   grid-column-end: 9;
-  text-align: center;
-  color: green;
-  font-weight: bold;
+  grid-row-start: 6;
+  grid-row-end: 8;
+  font-size: 1.2em;
+  color: black;
+  margin-right: 5%;
 }
-sup {
-  font-size: .6em;
+.odom {
+  background-image: url('../assets/tc_Odometer.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  grid-column-start: 6;
+  grid-column-end: 9;
+  grid-row-start: 9;
+  grid-row-end: 11;
+  width: 100%;
+  height: 100%;
 }
 h3 {
-  grid-row: 14;
   grid-column-start: 1;
-  grid-column-end: 9;
-  text-align: center;
-  font-size: 1em;
-  margin-bottom: 100px;
+  grid-column-end: 6;
+  grid-row-start: 9;
+  grid-row-end: 11;
+  font-size: 1.2em;
+  line-height: 20px;
+  text-align: right;
+  margin-left: 5%;
 }
-.bitd {
-  font-size: 1.3em;
+h4 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 18;
+  grid-row-end: 20;
+  text-align: center;
+  font-size: 2em;
+  line-height: 2;
+}
+h5 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 21;
+  grid-row-end: 24;
+  text-align: center;
+  font-size: 1.5em;
+  color: green;
+}
+ul {
+  width: 100%;
   grid-column-start: 1;
   grid-column-end: 9;
-  grid-row: 11;
-  text-align: center;
-  background-color: #c22227;
-  color: white;
-  height: 120px;
-  line-height: 30px;
+  grid-row-start: 12;
+  grid-row-end: 16;
+  font-size: 1.5em;
+  line-height: 1.3;
+  color: #751d1d;
+  list-style: circle;
+}
+.phone {
+  background-image: url('../assets/phone.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 17;
+  grid-row-end: 23;
+  width: 100%;
+  height: 100%;
+}
+.google {
+  background-image: url('../assets/playbutton.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 17;
+  grid-row-end: 19;
+  width: 100%;
+  height: 100%;
+}
+.apple {
+  background-image: url('../assets/apple.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 19;
+  grid-row-end: 22;
+  width: 100%;
+  height: 100%;
+  margin-right: 5%;
 }
 @media (min-width: 480px) {
-  video {
-    width: 90%;
-    margin-left: 5%;
-    grid-row-start: 2;
-    grid-row-end: 4;
-    grid-column-start: 1;
-    grid-column-end: 4;
-  }
 }
 @media (min-width: 700px) {
-  video {
-    grid-row-start: 2;
-    grid-row-end: 3;
+  .main {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    box-shadow: 0px 10px 10px black;
+  }
+  .banner {
+    background-size: contain;
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
+  h1 {
+    grid-row: 4;
+  }
+}
+@media (min-width: 1000px) {
+  .banner {
+    background-size: contain;
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 7;
+  }
+  h1 {
+    grid-row: 6;
+    font-size: 1.6em;
+    line-height: 70px;
+  }
+  .clock {
     grid-column-start: 2;
     grid-column-end: 4;
+    grid-row-start: 8;
+    grid-row-end: 10;
+  }
+  h2 {
+    font-size: 1.3em;
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 8;
+    grid-row-end: 10;
+  }
+  .odom {
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 11;
+    grid-row-end: 13;
+  }
+  h3 {
+    font-size: 1.3em;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 11;
+    grid-row-end: 13;
+  }
+  ul {
+    grid-row: 14;
   }
 }
 </style>
