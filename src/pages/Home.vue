@@ -36,6 +36,7 @@ export default {
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(30, 70px);
   overflow-y: scroll;
+  background-image: url('../assets/noise.png');
 }
 .banner {
   grid-column-start: 1;
@@ -80,8 +81,9 @@ h2 {
   grid-row-start: 6;
   grid-row-end: 8;
   font-size: 1.2em;
-  color: black;
+  color: white;
   margin-right: 5%;
+  font-weight: 300;
 }
 .odom {
   background-image: url('../assets/tc_Odometer.svg');
@@ -104,6 +106,8 @@ h3 {
   line-height: 20px;
   text-align: right;
   margin-left: 5%;
+  color: white;
+  font-weight: 300;
 }
 h4 {
   grid-column-start: 5;
@@ -113,6 +117,8 @@ h4 {
   text-align: center;
   font-size: 2em;
   line-height: 2;
+  color: white;
+  font-weight: 300;
 }
 h5 {
   grid-column-start: 5;
@@ -121,7 +127,8 @@ h5 {
   grid-row-end: 24;
   text-align: center;
   font-size: 1.5em;
-  color: green;
+  color: lightgreen;
+  font-weight: 300;
 }
 ul {
   width: 100%;
@@ -131,7 +138,8 @@ ul {
   grid-row-end: 16;
   font-size: 1.5em;
   line-height: 1.3;
-  color: #751d1d;
+  color: white;
+  font-weight: 300;
   list-style: circle;
 }
 .phone {
@@ -167,9 +175,9 @@ ul {
   grid-column-end: 9;
   grid-row-start: 19;
   grid-row-end: 22;
-  width: 100%;
+  width: 80%;
   height: 100%;
-  margin-right: 5%;
+  margin-left: 10%;
 }
 @media (min-width: 480px) {
 }

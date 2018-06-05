@@ -2,7 +2,7 @@
     <div class="Navmain">
         <div class="TClogo" v-on:click="navToggle(); $router.push('/')"></div>
       <div class="buttonbox">
-        <button class="About" v-on:click="navToggle(); $router.push('/About')">About</button>
+        <button class="About" v-on:click="navToggle(); $router.push('/About')">About/FAQ</button>
         <button class="Contact" v-on:click="navToggle(); $router.push('/Contact')">Contact</button>
        </div>
     </div>
